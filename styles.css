@@ -1,0 +1,213 @@
+/* Universal Indicators */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Merienda';
+    src: url('./Fonts/Merienda.woff2') format('woff2'), /* Ensure the correct font file path and format */
+         url('./Fonts/Merienda.woff') format('woff');
+}
+.merienda {
+    font-family: 'Merienda', cursive;
+    font-weight: 500px;
+    font-optical-sizing: auto;
+  }
+body{
+    font-family: Merienda;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #020303;
+    color: #fff;
+    font-family:Merinda;
+    font-weight: bolder;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar a:hover{
+    background-color: #8f928f4e;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.logo-pic {
+    width: 50px; 
+    border-radius: 50%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+li a:hover {
+    border-radius: 20px;
+    background-color: #373636;
+}
+.hero {
+    background-image: url('./Assets/s19.jpeg'); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 800px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    padding-bottom: 20px;
+   
+ 
+}
+
+.hero-content {
+    display: inline-block;
+    background-color:rgba(0, 0, 0, 0.629);
+    padding: 20px;
+    border-radius: 50px; 
+    color: #cbd0d0;
+    margin-top: 600px;
+    margin-bottom: 0px;
+    
+}
+button{
+    border: #fff;
+    background-color:  #4CAF50;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+button:hover{
+    background-color: #8f928f83;
+}
+
+.btn-SignUp {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.main {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+.header {
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+.page {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+h2,p{
+    display: flex;
+    justify-content: center;
+ }
+.SSD {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    
+   
+}
+.s2, .SSD-PIC1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 200%;
+    height: 300px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    gap: 20px;
+    transition: transform 0.2s ease-in-out; 
+}
+.SSD-PIC1:hover{
+    transform: scale(1.2);
+}
+.SSD-PIC {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; 
+}
+.SSD-PIC:hover {
+    transform: scale(1.2);
+}
+.contact {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #34343330;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(8, 8, 8, 0.1);
+  margin-bottom: 200px;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  resize: none;
+}
+
+.contact button {
+  width: 100%;
+  padding: 10px;
+  background-color:#4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.contact button:hover{
+    background-color: #3082048e;
+}
+.footer{
+    display: inline;
+    justify-content:center;
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0707;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-image{
+    display: inline;
+    justify-content:space-between;
+    padding: 10px;
+    cursor: pointer;
+    height: 200px;
+    transition: transform 0.3s ease-in-out; 
+}
+footer a :hover{
+    transform: scale(2.2);
+}
+.year, .page{
+    padding: 6px;
+    font-size: larger;
+}
