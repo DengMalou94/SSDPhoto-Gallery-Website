@@ -1,7 +1,7 @@
-@media (min-width: 1024px) {
+@media (orientation:landscape) {
     /* Adjust styles for smaller screens */
     .SSD {
-      width: 100%; /* Make each image take the full width */
+      width: 50%; /* Make each image take the full width */
     }
 /* Universal Indicators */
 *{
@@ -24,7 +24,7 @@ body{
 }
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -125,6 +125,7 @@ h2,p{
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 40px;
     padding: 20px;
     border-radius: 20px;
@@ -192,15 +193,11 @@ h2,p{
     background-color: #3082048e;
 }
 .footer{
-    display: inline;
-    justify-content:center;
     text-align: center;
     padding: 20px;
     background-color: #0a0707;
     color: #fff;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 .footer-image{
     display: inline;
