@@ -1,7 +1,7 @@
-@media (orientation:landscape) {
+@media (max-width:600px) {
     /* Adjust styles for smaller screens */
     .SSD {
-      width: 50%; /* Make each image take the full width */
+      width: 100%; /* Make each image take the full width */
     }
 /* Universal Indicators */
 *{
