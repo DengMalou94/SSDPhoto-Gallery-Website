@@ -1,6 +1,6 @@
-@media (max-width: 600px) {
+@media (min-width: 1024px) {
     /* Adjust styles for smaller screens */
-    .gallery-item {
+    .SSD {
       width: 100%; /* Make each image take the full width */
     }
 /* Universal Indicators */
