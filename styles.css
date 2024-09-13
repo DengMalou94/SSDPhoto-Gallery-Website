@@ -1,3 +1,11 @@
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .gallery-item {
+      width: 100%; /* Make each image take the full width */
+    }
+
+  
+
 /* Universal Indicators */
 *{
     margin: 0;
@@ -19,6 +27,7 @@ body{
 }
 .navbar {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -210,4 +219,5 @@ footer a :hover{
 .year, .page{
     padding: 6px;
     font-size: larger;
+}
 }
