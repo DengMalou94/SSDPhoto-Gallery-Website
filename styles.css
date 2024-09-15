@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'Merienda';
     src: url('./Fonts/Merienda.woff2') format('woff2'), /* Ensure the correct font file path and format */
-         url('./Fonts/Merienda.woff') format('woff');
+url('./Fonts/Merienda.woff') format('woff');
 }
 
 .merienda {
@@ -20,14 +20,15 @@ body {
     font-family: 'Merienda', cursive;
 }
 
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 25px;
-}
+
 
 .logo-pic {
-    width: 50px;
+    display: flex;
+    flex-direction: row;
+   justify-content: right;
+    height: auto;
+    min-width: 100%;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -36,21 +37,34 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 800px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 700px;
+
+
 }
+.hero-image{
+    max-width: 100%;
+    height: 100px;
+    image-rendering: crisp-edges;
+    
+
+}
+
 
 .hero-content {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.63);
-    padding: 20px;
-    border-radius: 50px;
-    color: #cbd0d0;
+    background:linear-gradient(to right, rgba(105, 29, 29, 0.617),rgb(2, 1, 1));
+    padding: 10px;
+    border-radius: 60px;
+    color: #f9f9f7;
+    max-width: 100%;
+    
 }
 
 button {
@@ -65,9 +79,54 @@ button {
 button:hover {
     background-color: #8f928f;
 }
+.SSD {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    height: auto;
+}
 
+.s2, .SSD-PIC1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    gap: 20px;
+    transition: transform 0.2s ease-in-out;
+}
 
+.SSD-PIC1:hover {
+    transform: scale(1.2);
+}
 
+.SSD-PIC {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+li a .navbar{
+    display: block; 
+}
+
+.SSD-PIC:hover {
+    transform: scale(1.2);
+}
 .main {
     text-align: center;
     padding: 20px;
@@ -90,45 +149,6 @@ h2, p {
     justify-content: center;
 }
 
-.SSD {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.s2, .SSD-PIC1 {
-    display: inline;
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-    height: 300px;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-bottom: 30px;
-    gap: 20px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.SSD-PIC1:hover {
-    transform: scale(1.2);
-}
-
-.SSD-PIC {
-    max-width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.SSD-PIC:hover {
-    transform: scale(1.2);
-}
 
 .contact {
     width: 300px;
@@ -151,14 +171,14 @@ h2, p {
 
 .contact input, .contact textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #cccccc;
-    border-radius: 20px;
+    border-radius: 30px;
     resize: none;
     font-family: 'Merienda', cursive;
     font-weight: bolder;
-    font-size: larger;
+    padding: 10px;
+   
+    
 }
 
 .contact button {
@@ -184,18 +204,39 @@ h2, p {
     background-color: #0a0707;
     color: #fff;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0;
+   
 }
 
 .year, .page {
     padding: 6px;
     font-size: larger;
 }
+.brand, .peak, .row, .cols{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: 100px;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+    gap: 5px;
+   
+  
+}
+img{
+  border-radius: 10%;
+  height: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 /* Website Responsive: Target small screens (Mobile phones) */
 @media (max-width: 600px) {
     .SSD, .s2 {
         width: 100%;
+
     }
     .navbar {
         display: flex;
@@ -214,6 +255,7 @@ h2, p {
 
     .navbar a {
         color: #fff;
+        flex-direction: row;
         text-decoration: none;
         padding: 10px 15px; /* Adjust padding for better spacing */
         display: inline-block; /* Ensure links are block-level for easier clicking */
@@ -251,10 +293,34 @@ h2, p {
     .footer-image:hover {
         transform: scale(2.2);
     }
+    .video{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        position:relative; 
+    }
+    .video h5, .video p{
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        margin: 10px;
+    }
+        .video video{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 40px;
+        }
 }
+
+
+       
+   
+
+
 /* Website Responsive: handle larger screens (Desktops) */
 @media (min-width: 1024px) {
-    .gallery-item {
+    .SSD {
         width: 25%;
     }
     .navbar {
@@ -289,15 +355,32 @@ h2, p {
         border-radius: 20px;
         background-color: #373636;
 
+    } 
+    .video{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        position:relative; 
     }
+    .video h1, .video p{
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        margin: 10px;
+    }
+        .video video{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 40px;
+        }  
 }
 
 /* Website Responsive: handle screen orientation (portrait vs landscape) */
 @media (orientation: landscape) {
-    .gallery-item {
+    .SSD {
         width: 50%;
     }
-
     .navbar {
         display: flex;
         flex-wrap: nowrap;
@@ -325,8 +408,22 @@ h2, p {
         text-decoration: none;
         padding: 0 15px;
     }
-
-    li a:hover {
-       
+    .video{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        position:relative; 
     }
+    .video h5, .video p{
+        font-size: 24px;
+        color: black;
+        text-align: center;
+        margin: 10px;
+    }
+        .video video{
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 40px;
+        }
 }
