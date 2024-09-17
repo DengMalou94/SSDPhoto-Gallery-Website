@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Merienda;
+    
+}
 
 @font-face {
     font-family: 'Merienda';
@@ -16,26 +20,20 @@ url('./Fonts/Merienda.woff') format('woff');
     font-weight: 500; /* Correct font-weight value */
 }
 
-body {
-    font-family: 'Merienda', cursive;
-}
-
-
-
 .logo-pic {
-    display: flex;
+    display: block;
     flex-direction: row;
    justify-content: right;
-    height: auto;
+    height: 100%;
     min-width: 100%;
-    width: 100px;
-    border-radius: 50%;
+    width: 30px;
+    border-radius: 5%;
 }
 
 .hero {
-    background-image: url('./Assets/bg2.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-image: url("./Assets/SSDlogo1.jpeg");
+    background-size:auto;
+    background-position:center;
     background-repeat: no-repeat;
     height: auto;
     display: flex;
@@ -44,7 +42,8 @@ body {
     color: white;
     text-align: center;
     padding: 10px;
-    padding-top: 700px;
+    padding-top: 400px;
+
 
 
 }
@@ -52,22 +51,20 @@ body {
     max-width: 100%;
     height: 100px;
     image-rendering: crisp-edges;
-    
-
 }
-
 
 .hero-content {
     display: inline-block;
-    background:linear-gradient(to right, rgba(105, 29, 29, 0.617),rgb(2, 1, 1));
+    background:linear-gradient(to right, rgba(245, 49, 49, 0.773),rgba(240, 190, 111, 0.937));
     padding: 10px;
-    border-radius: 60px;
-    color: #f9f9f7;
+    border-radius: 40px;
+    color: #fcfafa;
     max-width: 100%;
+    margin-top:20px;
     
 }
 
-button {
+button,.btn-SignUp {
     border: none;
     background-color: #4CAF50;
     border-radius: 20px;
@@ -79,7 +76,7 @@ button {
 button:hover {
     background-color: #8f928f;
 }
-.SSD {
+.SSD, .SSD-PIC2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -92,14 +89,13 @@ button:hover {
     height: auto;
 }
 
-.s2, .SSD-PIC1 {
+ .SSD-PIC1,.s2 .SSD-PIC2{
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     max-width: 100%;
-    height: auto;
-    border-radius: 50px;
+    height: 100%;
+    border-radius: 40px;
     cursor: pointer;
     margin-bottom: 30px;
     gap: 20px;
@@ -115,11 +111,12 @@ button:hover {
     align-items: center;
     flex-direction: row;
     max-width: 100%;
-    height: 200px;
+    height: 100px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
+
 li a .navbar{
     display: block; 
 }
@@ -144,7 +141,8 @@ li a .navbar{
     line-height: 1.6;
 }
 
-h2, p {
+
+h2, p, h5 {
     display: flex;
     justify-content: center;
 }
@@ -159,6 +157,7 @@ h2, p {
     box-shadow: 0 4px 6px rgba(8, 8, 8, 0.1);
     font-weight: bolder;
     font-size: larger;
+
 }
 
 .contact h2 {
@@ -219,18 +218,84 @@ h2, p {
     flex-direction: row;
     min-width: 100px;
     justify-content: center;
-    padding: 2px;
+    padding: 1px;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
    
   
 }
 img{
   border-radius: 10%;
   height: 100px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+ 
 }
+/* General Styles */
+body {
+    font-family: merienda;
+    line-height: 1.5;
+  
+}
+
+.roster {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h5 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container for Player Information */
+.player, .staff {
+    border: 1px solid #f9f9f6;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Image Styling */
+.staff,.player img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Player Information */
+.player p {
+    margin: 5px 0;
+    color: #323334;
+}
+
+/* Section Styles */
+.guard, .forward, .center, .wing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.guard .player, .forward .player, .center .player, .wing, .player {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guard .player, .forward .player, .center .player, .wing, .player {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .guard .player, .forward .player, .center .player, .wing, .player {
+        flex: 1 1 100%;
+    }
+}
+
 
 /* Website Responsive: Target small screens (Mobile phones) */
 @media (max-width: 600px) {
@@ -294,33 +359,33 @@ img{
         transform: scale(2.2);
     }
     .video{
-        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
-        position:relative; 
+        padding: 10px;
+        position:block; 
+        gap: 10px;
+
     }
-    .video h5, .video p{
+    .video h5, .roster h5, .s2 h1 .video p{
         font-size: 24px;
         color: black;
         text-align: center;
         margin: 10px;
     }
         .video video{
+            max-width: 100%;
             width: 100%;
             height: auto;
-            display: block;
             border-radius: 40px;
         }
 }
-
-
-       
-   
-
-
 /* Website Responsive: handle larger screens (Desktops) */
 @media (min-width: 1024px) {
-    .SSD {
+    .SSD{
         width: 25%;
     }
     .navbar {
@@ -357,28 +422,34 @@ img{
 
     } 
     .video{
-        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
-        position:relative; 
+        padding: 10px;
+        position:block; 
+        gap: 10px;
     }
-    .video h1, .video p{
+    .video h1, .roster h5, .s2 h1, .video p{
         font-size: 24px;
         color: black;
         text-align: center;
         margin: 10px;
     }
         .video video{
+            display: flex;
+            max-width: 100%;
             width: 100%;
             height: auto;
-            display: block;
             border-radius: 40px;
         }  
 }
 
 /* Website Responsive: handle screen orientation (portrait vs landscape) */
 @media (orientation: landscape) {
-    .SSD {
+    .SSD{
         width: 50%;
     }
     .navbar {
@@ -409,21 +480,26 @@ img{
         padding: 0 15px;
     }
     .video{
-        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
-        position:relative; 
+        padding: 10px;
+        position:block; 
+        gap: 10px;
     }
-    .video h5, .video p{
+    .video h5, .roster h5 , .s2 h1 .video p{
         font-size: 24px;
         color: black;
         text-align: center;
         margin: 10px;
     }
         .video video{
+            max-width: 100%;
             width: 100%;
             height: auto;
-            display: block;
             border-radius: 40px;
         }
 }
