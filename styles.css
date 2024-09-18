@@ -6,19 +6,35 @@
 }
 body{
     font-family: Merienda;
+    background-color: #33333323;
     
 }
 
 @font-face {
-    font-family: 'Merienda';
+    font-family: 'Merienda','gabrela-regular';
     src: url('./Fonts/Merienda.woff2') format('woff2'), /* Ensure the correct font file path and format */
 url('./Fonts/Merienda.woff') format('woff');
+src: url('./Fonts/Cookie\,Great_Vibes\,Italianno\,Merienda\,Qwigley\,etc/.gabriela-regular') format('woff2'), /* Ensure the correct font file path and format */
+url('./Fonts/gabriela-regular') format('woff');
+
+
 }
 
 .merienda {
     font-family: 'Merienda', cursive;
-    font-weight: 500; /* Correct font-weight value */
+    font-weight: 500; 
 }
+.gabriela-regular {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nova-cut-regular {
+  font-family: "Nova Cut", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .logo-pic {
     display: block;
@@ -77,13 +93,13 @@ button:hover {
     background-color: #8f928f;
 }
 .SSD, .SSD-PIC2 {
-    display: flex;
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 20px;
+    gap: 5px;
+    padding: 2px;
     border-radius: 20px;
     margin: auto;
     height: auto;
@@ -211,16 +227,16 @@ h2, p, h5 {
     padding: 6px;
     font-size: larger;
 }
-.brand, .peak, .row, .cols{
+.brand, .peak,.cols{
     height: auto;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
     min-width: 100px;
-    justify-content: center;
-    padding: 1px;
+    justify-content:center;
+    padding: 2px;
     align-items: center;
     gap: 2px;
+   
    
   
 }
@@ -249,6 +265,7 @@ h5 {
 
 /* Container for Player Information */
 .player, .staff {
+    flex: 1 1 200px;
     border: 1px solid #f9f9f6;
     border-radius: 8px;
     padding: 10px;
@@ -276,6 +293,7 @@ h5 {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+
 }
 
 .guard .player, .forward .player, .center .player, .wing, .player {
@@ -310,7 +328,7 @@ h5 {
         padding: 20px;
         background-color: #020303;
         color: #fff;
-        font-family: 'Merienda', cursive;
+        font-family: 'gabriela-regular';
         font-weight: bolder;
         text-align: center; /* Center text for mobile screens */
         position: fixed;
@@ -460,7 +478,7 @@ h5 {
         padding: 20px;
         background-color: #020303;
         color: #fff;
-        font-family: 'Merienda', cursive;
+        font-family: 'gabriela-regular';
         font-weight: bolder;
         text-align: left;
         position: fixed;
