@@ -324,7 +324,7 @@ body {
         padding: 20px;
         background-color: #020303;
         color: #fff;
-        font-family: 'gabriela-regular';
+        font-family: 'Nova cut';
         font-weight: bolder;
         text-align: center; /* Center text for mobile screens */
         position: fixed;
@@ -336,18 +336,18 @@ body {
         color: #fff;
         flex-direction: row;
         text-decoration: none;
-        padding: 10px 15px; /* Adjust padding for better spacing */
-        display: inline-block; /* Ensure links are block-level for easier clicking */
-        background-color: #020303; /* Consistent background color */
-        margin-bottom: 10px; /* Space between links */
-        border-radius: 20px; /* Rounded corners */
-        text-align: left; /* Center text inside links */
+        padding: 10px 15px;
+        display: flex; 
+        background-color: #020303; 
+        margin-bottom: 10px; 
+        border-radius: 20px;
+        text-align: left; 
     }
 
     .navbar a:hover {
         background-color: #8f928f4e;
-        border-radius: 20px; /* Maintain rounded corners on hover */
-        padding: 10px; /* Consistent padding on hover */
+        border-radius: 20px; 
+        padding: 10px; 
     }
     li a:hover {
         border-radius: 20px;
@@ -362,11 +362,11 @@ body {
         text-decoration: none;
     }
     .footer-image {
-        display: inline;
+        display: flex;
         justify-content: space-between;
         padding: 10px;
         cursor: pointer;
-        height: 200px;
+        height: auto;
         transition: transform 0.3s ease-in-out;
     }
     .footer-image:hover {
