@@ -6,7 +6,7 @@
 }
 body{
     font-family: Merienda;
-    background-color: #33333323;
+    background-color: #ffffff;
     
 }
 
@@ -39,11 +39,11 @@ url('./Fonts/gabriela-regular') format('woff');
 .logo-pic {
     display: block;
     flex-direction: row;
-   justify-content: right;
+    justify-content: right;
     height: 100%;
     min-width: 100%;
-    width: 30px;
-    border-radius: 5%;
+    width: 80px;
+    border-radius: 0%;
 }
 
 .hero {
@@ -71,12 +71,12 @@ url('./Fonts/gabriela-regular') format('woff');
 
 .hero-content {
     display: inline-block;
-    background:linear-gradient(to right, rgba(245, 49, 49, 0.773),rgba(240, 190, 111, 0.937));
+    background:linear-gradient(to right, rgba(243, 28, 28, 0.468),rgba(240, 190, 111, 0.937));
     padding: 10px;
     border-radius: 40px;
-    color: #fcfafa;
+    color: #ffffff;
     max-width: 100%;
-    margin-top:20px;
+    margin-top:2px;
     
 }
 
@@ -113,7 +113,6 @@ button:hover {
     height: 100%;
     border-radius: 40px;
     cursor: pointer;
-    margin-bottom: 30px;
     gap: 20px;
     transition: transform 0.2s ease-in-out;
 }
@@ -192,8 +191,6 @@ h2, p, h5 {
     font-family: 'Merienda', cursive;
     font-weight: bolder;
     padding: 10px;
-   
-    
 }
 
 .contact button {
@@ -236,19 +233,17 @@ h2, p, h5 {
     padding: 2px;
     align-items: center;
     gap: 2px;
-   
-   
-  
 }
 img{
   border-radius: 10%;
   height: 100px;
+
  
 }
 /* General Styles */
 body {
     font-family: merienda;
-    line-height: 1.5;
+    line-height: 1.2;
   
 }
 
@@ -258,9 +253,9 @@ body {
     padding: 20px;
 }
 
-h5 {
+.roster, .SSD, .s2, .video h1 {
     text-align: center;
-    color: #333;
+    color: #020202;
 }
 
 /* Container for Player Information */
@@ -274,6 +269,7 @@ h5 {
     background-color: #f9f9f9;
 }
 
+
 /* Image Styling */
 .staff,.player img {
     max-width: 100%;
@@ -284,7 +280,7 @@ h5 {
 /* Player Information */
 .player p {
     margin: 5px 0;
-    color: #323334;
+    color: #0b0c0c;
 }
 
 /* Section Styles */
@@ -379,26 +375,28 @@ h5 {
     .video{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
         height: auto;
         max-width: 800px;
         margin: 0 auto;
-        padding: 10px;
-        position:block; 
-        gap: 10px;
+        padding: 10px; 
+    
 
     }
     .video h5, .roster h5, .s2 h1 .video p{
+        width: 100%;
         font-size: 24px;
         color: black;
         text-align: center;
         margin: 10px;
     }
         .video video{
-            max-width: 100%;
+            max-width: 640px;
             width: 100%;
             height: auto;
             border-radius: 40px;
+        
         }
 }
 /* Website Responsive: handle larger screens (Desktops) */
