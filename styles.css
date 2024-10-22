@@ -34,6 +34,8 @@ url('./Fonts/Rancho/Rancho-Regular.ttf') format('woff');
   font-style: normal;
 }
 
+
+
 .logo-pic {
     display: block;
     justify-content: right;
@@ -306,10 +308,39 @@ img{
     transform: translateY(-10px);
 }
 
+
+
 /* Responsive Design */
 @media (min-width: 720px){
     .guard .player, .forward .player, .center .player, .wing, .player {
         flex: 1;
+    }
+    .footer-image {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        cursor: pointer;
+        height: auto;
+        gap: 20px;
+    }
+    
+    .footer-image a {
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid #ccc; 
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(239, 231, 231, 0.1); 
+    }
+    
+    .footer-image a:hover {
+        transform: scale(1.2);
+        box-shadow: 0 6px 12px rgba(239, 233, 233, 0.2); 
+    }
+    
+    .footer-image a i {
+        font-size: 24px; /* Icon size */
+        color: #f0eded; /* Icon color */
     }
 }
 @media (max-width: 600px){
@@ -337,6 +368,7 @@ img{
         text-align: right; 
         position: block;
         width:100%;
+        max-width: 1300px;
        
     }
 
@@ -370,17 +402,11 @@ img{
         text-align: center;
         text-decoration: none;
     }
-    .footer-image {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        cursor: pointer;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
-    }
-    .footer-image:hover {
-        transform: scale(2.2);
-    }
+    
+     
+       
+    
+
     .video{
         display: flex;
         flex-wrap: wrap;
@@ -458,6 +484,7 @@ img{
         position: fixed;
         width: 100%;
         z-index: 9999;
+        
     }
 
     .navbar a:hover {
